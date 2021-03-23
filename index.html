@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICON -->
+    <link rel="shortcut icon" href="./assets/images/logo_noteapp.png" type="image/x-icon">
+
+    <!-- LINK STYLE -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- GOOGLE SEO -->
+    <meta name="title" content="Aplikasi NoteApp - Belajar JS">
+    <meta name="description" content="Belajar JS NoSQL DB">
+
+    <!-- FACEBOOK -->
+    <meta name="og:title" content="Aplikasi NoteApp - Belajar JS">
+    <meta name="og:description" content="Belajar JS NoSQL DB">
+    <meta name="og:image" content="./assets/images/logo_noteapp.png" />
+
+    <!-- TWITTER -->
+    <meta property="twitter:title" content="Aplikasi NoteApp - Belajar JS">
+    <meta property="twitter:description" content="Belajar JS NoSQL DB">
+    <meta property="twitter:image" content="./assets/images/logo_noteapp.png">
+
+    <title>Belajar JS Cuy</title>
+</head>
+<body>
+    
+    <main id="app">
+
+        <!-- NAVBAR -->
+            <nav class="navbar">
+                <h3 class="logo">MY LIFE DIARY</h3>
+            </nav>
+        <!-- end NAVBAR -->
+
+        <!-- FORM INPUT NOTE -->
+            <form class="note_form" id="note_form" onsubmit="createData(event)">
+                <button class="btn_show" id="btn_show" type="button" onclick="showNoteForm()">
+                    NOTE
+                </button>
+
+                <div class="form_group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Masukkan judul" required>
+                </div>
+
+                <div class="form_group">
+                    <label for="body">Body</label>
+                    <textarea type="text" id="body" rows="5" placeholder="Masukkan Catatan Anda"></textarea>
+                </div>
+
+                <button type="submit" id="submit">add note</button>
+            </form>
+        <!-- end FORM INPUT NOTE -->
+
+        <!-- CARD AREA -->
+            <section class="card_area" id="card_area">
+                
+                <!-- Card akan ditambahkan di sini -->
+                
+
+            </section>
+        <!-- end CARD AREA -->
+
+    </main>
+
+    <!-- MODAL EDIT -->
+    <div class="edit_modal" id="edit_modal">
+
+        <span class="material-icons" id="close" onclick="hideEditModal()">
+            close
+        </span>
+
+        <!-- FORM INPUT NOTE -->
+            <form class="edit_form" id="edit_form" onsubmit="updateData(event)">
+
+                <!-- hidden - tidak akan tampil, berguna untuk mengambil id dari collection-->
+                <input type="hidden" id="edit_id"> 
+                
+                <div class="form_group">
+                    <label for="edit_title">Title</label>
+                    <input type="text" id="edit_title" placeholder="Masukkan judul" required>
+                </div>
+
+                <div class="form_group">
+                    <label for="edit_body">Body</label>
+                    <textarea type="text" id="edit_body" rows="5" placeholder="Masukkan Catatan Anda"></textarea>
+                </div>
+
+                <button type="submit" id="submit">edit note</button>
+            </form>
+        <!-- end FORM INPUT NOTE --> 
+    </div>
+    <!-- end MODAL EDIT -->
+
+<script src="./assets/js/main.js" type="text/javascript"></script>
+</body>
+</html>

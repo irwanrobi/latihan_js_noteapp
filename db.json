@@ -1,0 +1,66 @@
+{
+  "notes_data": [
+    {
+      "title": "Hari Senin",
+      "body": "Ini isi catatan hari Senin",
+      "id": 1
+    },
+    {
+      "title": "Hari Selasa",
+      "body": "Ini isi catatan Hari Selasa",
+      "id": 2
+    },
+    {
+      "title": "Hari Rabu",
+      "body": "Ini isi catatan Hari Rabu",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "title": "Hari Kamis",
+      "body": "Ini isi catatan Hari Kamis"
+    },
+    {
+      "title": "Hari Jumat",
+      "body": "Ini isi catatan Hari Jumat",
+      "id": 5
+    },
+    {
+      "title": "Hari Sabtu",
+      "body": "Ini isi catatan Hari Sabtu",
+      "id": 6
+    }
+  ],
+  "user_data": [
+    {
+      "id": 1,
+      "username": "irwanrobi",
+      "email": "irwanrobi@gmail.com",
+      "avatar": "https://picsum.photos/seed/13/300"
+    },
+    {
+      "username": "setiabudi",
+      "email": "setiabudi@gmail.com",
+      "avatar": "https://picsum.photos/seed/14/300",
+      "id": 2
+    },
+    {
+      "username": "iqbale",
+      "email": "iqbale@gmail.com",
+      "avatar": "https://picsum.photos/seed/15/300",
+      "id": 3
+    },
+    {
+      "username": "jordan",
+      "email": "jordan@gmail.com",
+      "avatar": "https://picsum.photos/seed/16/300",
+      "id": 4
+    },
+    {
+      "username": "fadliselaz",
+      "email": "fadliselaz@gmail.com",
+      "avatar": null,
+      "id": 5
+    }
+  ]
+}

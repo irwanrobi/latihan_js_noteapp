@@ -1,0 +1,65 @@
+#PROSES MENDAPATKAN DATA / GET
+###
+GET http://localhost:3000/notes_data
+Content-Type: application/json
+
+#PROSES MENAMBAHKAN DATA / POST
+###
+POST http://localhost:3000/notes_data
+Content-Type: application/json
+
+{
+    "title" : "ini adalah catatan saya",
+    "body" : "ini adalah catatan saya.."
+}
+
+#PROSES update data MENYELURUH / PUT
+###
+PUT http://localhost:3000/notes_data/1
+Content-Type: application/json
+
+{
+    "title" : "saya mengubah title 1",
+    "body" : "saya ubah body 1"
+}
+
+#PROSES update data SATUAN / PATCH
+###
+PATCH http://localhost:3000/notes_data/2
+Content-Type: application/json
+
+{
+    "body" : "saya hanya mengubah body pada data id ke 2"
+}
+
+#PROSES delete data / DELETE
+###
+DELETE http://localhost:3000/notes_data/2
+Content-Type: application/json
+
+#MENAMBAH data pada User Data
+###c
+POST http://192.168.1.106:3000/user_data
+Content-Type: application/json
+
+{
+    "username" : "setiabudi",
+    "email" : "setiabudi@gmail.com",
+    "avatar" : "https://picsum.photos/seed/14/300"
+}
+
+#EXTERNAL DOMAIN MENDAPATKAN DATA / GET
+###
+GET https://a2a813e8695c.ngrok.io/notes_data
+Content-Type: application/json
+
+#EXTERNAL DOMAIN MENAMBAHKAN DATA / POST
+###
+POST https://a2a813e8695c.ngrok.io/notes_data
+Content-Type: application/json
+
+{
+    "title" : "ini Roby",
+    "body" : "ini adalah catatan Roby.."
+}
+
